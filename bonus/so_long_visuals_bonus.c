@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long_visuals.c                                  :+:      :+:    :+:   */
+/*   so_long_visuals_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/30 05:10:12 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/02 20:22:50 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/02 23:35:02 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "../so_long_bonus.h"
 
 void	ft_gen_grass(t_mlx *mlx, int x, int y)
 {
@@ -39,17 +39,8 @@ void	ft_gen_collectible(t_mlx *mlx, int x, int y)
 		mlx_put_image_to_window(mlx->mlx_ptr, mlx->wnd_ptr, mlx->img_c_2, x, y);
 }
 
-void	ft_gen_player(t_mlx *mlx, int x, int y, const char *direction)
+void	ft_gen_enemy(t_mlx *mlx, int x, int y)
 {
-	static const char	*local_direction;
-
-	if (ft_strncmp(direction, NO, 2))
-		local_direction = direction;
 	ft_gen_grass(mlx, x, y);
-	if (!ft_strncmp(local_direction, LEFT, 4))
-		mlx_put_image_to_window(mlx->mlx_ptr, mlx->wnd_ptr,
-			mlx->img_pl_1, x, y);
-	else if (!ft_strncmp(local_direction, RIGHT, 5))
-		mlx_put_image_to_window(mlx->mlx_ptr, mlx->wnd_ptr,
-			mlx->img_pr_1, x, y);
+	mlx_put_image_to_window(mlx->mlx_ptr, mlx->wnd_ptr, mlx->img_nm, x, y);
 }

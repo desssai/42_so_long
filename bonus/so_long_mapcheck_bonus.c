@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long_mapcheck.c                                 :+:      :+:    :+:   */
+/*   so_long_mapcheck_bonus.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/29 03:07:05 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/03 02:39:45 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/02 23:44:37 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "../so_long_bonus.h"
 
 static int	ft_parse_outer_line(char *line, t_map *map)
 {
@@ -83,28 +83,29 @@ int	ft_map_validation(int fd, t_map *map)
 
 void	ft_generate_map(t_map *map, t_mlx *mlx)
 {
-	int	x;
-	int	y;
+	int	xy[2];
 
-	x = 0;
-	y = 0;
-	while (x * y < map->lines * map->width * 48 * 48)
+	xy[0] = 0;
+	xy[1] = 0;
+	while (xy[0] * xy[1] < map->lines * map->width * 48 * 48)
 	{
-		if (map->content[y / 48 * map->width + x / 48] == '1')
-			ft_gen_wall(mlx, x, y);
-		else if (map->content[y / 48 * map->width + x / 48] == '0')
-			ft_gen_grass(mlx, x, y);
-		else if (map->content[y / 48 * map->width + x / 48] == 'E')
-			ft_gen_exit(mlx, x, y);
-		else if (map->content[y / 48 * map->width + x / 48] == 'P')
-			ft_gen_player(mlx, x, y, RIGHT);
-		else if (map->content[y / 48 * map->width + x / 48] == 'C')
-			ft_gen_collectible(mlx, x, y);
-		x += 48;
-		if (x / 48 == map->width)
+		if (map->content[xy[1] / 48 * map->width + xy[0] / 48] == '1')
+			ft_gen_wall(mlx, xy[0], xy[1]);
+		else if (map->content[xy[1] / 48 * map->width + xy[0] / 48] == '0')
+			ft_gen_grass(mlx, xy[0], xy[1]);
+		else if (map->content[xy[1] / 48 * map->width + xy[0] / 48] == 'E')
+			ft_gen_exit(mlx, xy[0], xy[1]);
+		else if (map->content[xy[1] / 48 * map->width + xy[0] / 48] == 'P')
+			ft_gen_player(mlx, xy[0], xy[1], RIGHT);
+		else if (map->content[xy[1] / 48 * map->width + xy[0] / 48] == 'C')
+			ft_gen_collectible(mlx, xy[0], xy[1]);
+		else if (map->content[xy[1] / 48 * map->width + xy[0] / 48] == 'N')
+			ft_gen_enemy(mlx, xy[0], xy[1]);
+		xy[0] += 48;
+		if (xy[0] / 48 == map->width)
 		{
-			y += 48;
-			x = 0;
+			xy[1] += 48;
+			xy[0] = 0;
 		}
 	}
 }
