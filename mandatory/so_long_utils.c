@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 04:27:10 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/02 02:22:12 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:13 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "../includes/so_long.h"
 
 int	ft_exit(void)
 {

@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 18:55:07 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/03 02:59:50 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:34 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long_bonus.h"
+#include "../includes/so_long_bonus.h"
 
 static void	ft_move_enemies(t_mlx *mlx)
 {

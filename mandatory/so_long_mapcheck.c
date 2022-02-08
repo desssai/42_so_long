@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/29 03:07:05 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/03 02:39:45 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:11 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "../includes/so_long.h"
 
 static int	ft_parse_outer_line(char *line, t_map *map)
 {
@@ -88,7 +88,7 @@ void	ft_generate_map(t_map *map, t_mlx *mlx)
 
 	x = 0;
 	y = 0;
-	while (x * y < map->lines * map->width * 48 * 48)
+	while (map->content[y / 48 * map->width + x / 48])
 	{
 		if (map->content[y / 48 * map->width + x / 48] == '1')
 			ft_gen_wall(mlx, x, y);

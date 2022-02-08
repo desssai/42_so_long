@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 18:55:07 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/03 03:05:27 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:08 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "../includes/so_long.h"
 
 static void	ft_move_player_part2(t_mlx *mlx, int delta_x, int delta_y)
 {

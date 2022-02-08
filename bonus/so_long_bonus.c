@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/29 00:04:14 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/03 02:38:17 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:27 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long_bonus.h"
+#include "../includes/so_long_bonus.h"
 
 void	so_long(char *filename)
 {

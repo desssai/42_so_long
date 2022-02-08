@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 18:31:08 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/02 23:34:55 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:48 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long_bonus.h"
+#include "../includes/so_long_bonus.h"
 
 static void	ft_gen_player2(t_mlx *mlx, const char *direction, int frame)
 {

@@ -6,18 +6,18 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 23:38:55 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/03 02:59:40 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:30 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long_bonus.h"
+#include "../includes/so_long_bonus.h"
 
 t_enemy	**ft_init_enemies(t_map *map)
 {
 	int		i;
 	t_enemy	**enemies;
 
-	enemies = (t_enemy **)malloc(sizeof(t_enemy *) * (map->total_enemies));
+	enemies = (t_enemy **)malloc(sizeof(t_enemy *) * (map->total_enemies + 1));
 	if (!enemies)
 		return (NULL);
 	i = -1;

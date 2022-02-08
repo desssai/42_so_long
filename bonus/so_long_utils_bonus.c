@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 04:27:10 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/03 03:03:36 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:39 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long_bonus.h"
+#include "../includes/so_long_bonus.h"
 
 t_map	*ft_init_map(int fd)
 {

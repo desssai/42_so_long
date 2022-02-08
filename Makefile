@@ -22,7 +22,7 @@ OBJS	=	$(SRCS:.c=.o)
 
 B_OBJS	=	$(B_SRCS:.c=.o)
 
-HEADS	=	./
+HEADS	=	./includes/
 
 NAME	=	so_long
 
@@ -39,17 +39,17 @@ FLAGS	=	-Wall -Werror -Wextra -Imlx
 RM		=	rm -f
 
 %.o: %.c
-	$(GCC) -Wall -Wextra -Werror -Imlx -c $< -o $@ 
+	$(GCC) $(FLAGS) -c $< -o $@ 
 
 $(NAME): $(OBJS)
 	$(MAKE) -C libft all
 	$(MAKE) -C mlx all
-	$(GCC) $(OBJS) $(LNAME) $(MLBNAME) -lz -framework OpenGL -framework AppKit -o $(NAME)
+	$(GCC) $(FLAGS) $(OBJS) $(LNAME) $(MLBNAME) -lz -framework OpenGL -framework AppKit -o $(NAME)
 
 $(B_NAME): $(B_OBJS)
 	$(MAKE) -C libft all
 	$(MAKE) -C mlx all
-	$(GCC) $(B_OBJS) $(LNAME) $(MLBNAME) -lz -framework OpenGL -framework AppKit -o $(B_NAME)
+	$(GCC) $(FLAGS) $(B_OBJS) $(LNAME) $(MLBNAME) -lz -framework OpenGL -framework AppKit -o $(B_NAME)
 
 all:	$(NAME)
 

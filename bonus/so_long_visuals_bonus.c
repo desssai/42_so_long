@@ -6,11 +6,11 @@
 /*   By: ncarob <ncarob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/30 05:10:12 by ncarob            #+#    #+#             */
-/*   Updated: 2022/02/02 23:35:02 by ncarob           ###   ########.fr       */
+/*   Updated: 2022/02/03 17:23:45 by ncarob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long_bonus.h"
+#include "../includes/so_long_bonus.h"
 
 void	ft_gen_grass(t_mlx *mlx, int x, int y)
 {
