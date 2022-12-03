@@ -2,9 +2,9 @@
 
 ## Overview
 
-The aim of the project is to create a small 2D game using the minimalistic graphics library provided by ecole 42 "MinilibX".\
-The project consists of map parsing, window management, event handling, colors, textures, generating sprites and so forth.\
-The "MinilibX" was developed internally and includes basic necessary tools to open a window, create images and deal with\
+The aim of the project is to create a small 2D game using the minimalistic graphics library provided by ecole 42 "MinilibX".
+The project consists of map parsing, window management, event handling, colors, textures, generating sprites and so forth.
+The "MinilibX" was developed internally and includes basic necessary tools to open a window, create images and deal with
 keyboard and mouse events.
 
 ### Here is an example
@@ -33,9 +33,9 @@ The Makefile rules are as follows:
 
 ## Maps
 
-The map has to be constructed with 5 components: player's starting position, exit, walls, collectibles, and free spaces.\
-The map must be rectangular. The map must be closed/surrounded by walls. If it’s not, the program returnы an error.\
-The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.\
+The map has to be constructed with 5 components: player's starting position, exit, walls, collectibles, and free spaces.
+The map must be rectangular. The map must be closed/surrounded by walls. If it’s not, the program returnы an error.
+The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.
 The map can be composed of only these 5 characters:
 - 0 for an empty space,
 - 1 for a wall,
