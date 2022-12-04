@@ -19,7 +19,7 @@ keyboard and mouse events.
 
 1. Clone the repository.
 2. Compile the game using a Makefile
-3. Launch the game by writing `./so_long ./maps/map_to_open` or `./so_long_bonus ./maps/map_to_open` in terminal.
+3. Launch the game by writing `./so_long ./maps/<map_to_open>` or `./so_long_bonus ./maps/<map_to_open>` in terminal.
 
 The Makefile rules are as follows:
 
