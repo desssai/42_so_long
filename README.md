@@ -9,11 +9,11 @@ keyboard and mouse events.
 
 ### Here is an example
 
-![image](https://user-images.githubusercontent.com/75085822/205447071-34f7976a-fa50-41c0-815c-9fe6442aa51e.png)
+![Winning](https://user-images.githubusercontent.com/75085822/205518358-7f4b832e-860f-4996-a801-003a61be6d46.gif)
 
-### Or another one
+### Another example
 
-![image](https://user-images.githubusercontent.com/75085822/205447137-4a78a567-8087-4165-9daa-eb7d0cf10ecd.png)
+![Losing](https://user-images.githubusercontent.com/75085822/205518386-3ad308bf-0725-4c3e-840b-357987a44250.gif)
 
 ## Usage
 
@@ -30,6 +30,8 @@ The Makefile rules are as follows:
 | CLEAN | Removes object files leaving only the game present. |
 | FCLEAN | Removes both the game and object files. |
 | RE | Recompiles the game using **CLEAN** and **ALL** Makefile rules |
+
+![ezgif com-gif-maker-4](https://user-images.githubusercontent.com/75085822/205518094-4152bec8-1b47-413a-9cff-ef69fc0b8704.gif)
 
 ## Maps
 
